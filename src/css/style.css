@@ -1,0 +1,117 @@
+/*Base*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*Font-family de la pagina */
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+/*
+--------------------------------------------------------------------------------
+                  * *PASSWORD.HTML* *
+--------------------------------------------------------------------------------
+*/
+/*Login password.html*/
+.login {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+/*form-container password.html*/
+.login .form--container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 30rem;
+}
+
+/*form-logo password.html*/
+.login .form--container .form--logo {
+  width: 15rem;
+  margin-bottom: 4.8rem;
+  justify-self: center;
+  display: none;
+}
+
+/*title password.html*/
+.login .form--container .form--title {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+/*subtitle password.html*/
+.login .form--container .form--subtitle {
+  color: #C7C7C7;
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+
+/*label password.html*/
+.form--form .form--label {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 0.4rem;
+}
+
+/*input password.html*/
+.form--form .input {
+  background-color: #F7F7F7;
+  border: none;
+  border-radius: 8px;
+  height: 3rem;
+  font-size: 1.6rem;
+  padding: 6px;
+  margin-bottom: 1.2rem;
+}
+
+/*form--form password.html*/
+.form--form {
+  display: flex;
+  flex-direction: column;
+}
+
+/*primary--button password.html*/
+.form--form .primary--button {
+  background-color: #ACD9B2;
+  border: none;
+  border-radius: 8px;
+  color: #FFFFFF;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: bold;
+  height: 5rem;
+}
+
+/*login--button password.html*/
+.form--form .login--button {
+  margin-top: 1.4rem;
+  margin-bottom: 3rem;
+}
+
+/*
+--------------------------------------------------------------------------------
+                  * * / PASSWORD.HTML * *
+--------------------------------------------------------------------------------
+*/
+/*components*/
+@media (max-width: 768px) {
+  .login .form--container .form--logo {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
