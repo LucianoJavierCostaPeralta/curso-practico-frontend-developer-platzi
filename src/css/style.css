@@ -1,4 +1,5 @@
 /*Base*/
+/* Reset*/
 * {
   margin: 0;
   padding: 0;
@@ -9,17 +10,11 @@ html {
   font-size: 62.5%;
 }
 
-/*Font-family de la pagina */
 body {
   font-family: "Quicksand", sans-serif;
 }
 
-/*
---------------------------------------------------------------------------------
-                  * *PASSWORD.HTML* *
---------------------------------------------------------------------------------
-*/
-/*Login password.html*/
+/* /Reset */
 .login {
   width: 100%;
   height: 100vh;
@@ -27,30 +22,26 @@ body {
   place-items: center;
 }
 
-/*form-container password.html*/
-.login .form--container {
+.login .container {
   display: grid;
   grid-template-rows: auto 1fr auto;
   width: 30rem;
 }
 
-/*form-logo password.html*/
-.login .form--container .form--logo {
-  width: 15rem;
+.login .container .logo {
+  width: 16rem;
   margin-bottom: 4.8rem;
   justify-self: center;
   display: none;
 }
 
-/*title password.html*/
-.login .form--container .form--title {
-  font-size: 1.8rem;
+.login .container .title {
+  font-size: 2rem;
   margin-bottom: 1.2rem;
   text-align: center;
 }
 
-/*subtitle password.html*/
-.login .form--container .form--subtitle {
+.login .container .subtitle {
   color: #C7C7C7;
   font-size: 1.6rem;
   font-weight: 300;
@@ -59,58 +50,48 @@ body {
   text-align: center;
 }
 
-/*label password.html*/
-.form--form .form--label {
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin-top: 0.4rem;
-}
-
-/*input password.html*/
-.form--form .input {
-  background-color: #F7F7F7;
-  border: none;
-  border-radius: 8px;
-  height: 3rem;
-  font-size: 1.6rem;
-  padding: 6px;
-  margin-bottom: 1.2rem;
-}
-
-/*form--form password.html*/
-.form--form {
+.form {
   display: flex;
   flex-direction: column;
 }
 
-/*primary--button password.html*/
-.form--form .primary--button {
+.form .label {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+.form .input {
+  background-color: #F7F7F7;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.8rem;
+  height: 3rem;
+  padding: 6px;
+  margin-bottom: 1.2rem;
+}
+
+.form .primary-button {
   background-color: #ACD9B2;
   border: none;
   border-radius: 8px;
   color: #FFFFFF;
   width: 100%;
   cursor: pointer;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: bold;
   height: 5rem;
 }
 
-/*login--button password.html*/
-.form--form .login--button {
+.form .login-button {
   margin-top: 1.4rem;
   margin-bottom: 3rem;
 }
 
-/*
---------------------------------------------------------------------------------
-                  * * / PASSWORD.HTML * *
---------------------------------------------------------------------------------
-*/
 /*components*/
-@media (max-width: 768px) {
-  .login .form--container .form--logo {
-    display: block;
+@media (max-width: 640px) {
+  .login .container .logo {
+    display: flex;
   }
 }
 

@@ -1,102 +1,76 @@
 @import "./variables";
 
-/*Font-family de la pagina */
-%font {
-    font-family: "Quicksand", sans-serif;
-}
 
-/*
---------------------------------------------------------------------------------
-                  * *PASSWORD.HTML* *
---------------------------------------------------------------------------------
-*/
-/*Login password.html*/
 %login {
     width: 100%;
     height: 100vh;
     display: grid;
     place-items: center;
-    
 }
 
-/*form-container password.html*/
-%form--container{
+%container {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 30rem;
 }
 
-/*form-logo password.html*/
-%form--logo{
-
-    width: 15rem;
+%logo {
+    width: 16rem;
     margin-bottom: 4.8rem;
     justify-self: center;
     display: none;
 }
 
-/*title password.html*/
-%form--title{
-    font-size: $lg;
+%title {
+    font-size:$lg;
     margin-bottom: 1.2rem;
     text-align: center;
 }
-/*subtitle password.html*/
-%form--subtitle{
-    color: $very--ligth-pink;
-    font-size: $md;
+
+%subtitle {
+    color:  $very--ligth-pink;
+    font-size: $sm;
     font-weight: 300;
     margin-top: 0;
     margin-bottom: 3.2rem;
     text-align: center;
 }
 
-/*label password.html*/
-%form--label{
-    font-size: $sm;
-    font-weight: bold;
-    margin-top: 0.4rem;
-}
-
-/*input password.html*/
-%input{
-    background-color: $text--input--field ;
-    border : none;
-    border-radius: 8px;
-    height: 3rem;
-    font-size: $md ;
-    padding: 6px;
-    margin-bottom: 1.2rem;
-}
-
-/*form--form password.html*/
-%form--form{
+%form {
     display: flex;
     flex-direction: column;
 }
 
-/*primary--button password.html*/
-%primary--button{
+%label {
+    font-size: $sm;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+
+%input {
+    background-color: $text--input--field;
+    border : none ;
+    border-radius: 8px;
+    font-size: $md;
+    height: 3rem;
+    padding : 6px;
+    margin-bottom: 1.2rem;
+}
+
+%primary-button {
     background-color: $hospital--green;
-    border: none;
+    border : none;
     border-radius: 8px;
     color: $white;
     width: 100%;
     cursor: pointer;
     font-size: $md;
-    font-weight: bold; 
+    font-weight: bold;
     height: 5rem;
+
 }
 
-/*login--button password.html*/
-%login--button{
+%login-button{
     margin-top: 1.4rem;
     margin-bottom: 3rem;
 }
-
-
-/*
---------------------------------------------------------------------------------
-                  * * / PASSWORD.HTML * *
---------------------------------------------------------------------------------
-*/
