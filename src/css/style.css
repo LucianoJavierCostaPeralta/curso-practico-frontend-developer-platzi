@@ -50,18 +50,26 @@ body {
   text-align: center;
 }
 
-.form {
+.login .container .form {
   display: flex;
   flex-direction: column;
 }
 
-.form .label {
+.login .container .form a {
+  color: #ACD9B2;
+  font-size: 1.6rem;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 5.2rem;
+}
+
+.login .container .form .label {
   font-size: 1.6rem;
   font-weight: bold;
   margin-bottom: 0.4rem;
 }
 
-.form .input {
+.login .container .form .input {
   background-color: #F7F7F7;
   border: none;
   border-radius: 8px;
@@ -71,7 +79,7 @@ body {
   margin-bottom: 1.2rem;
 }
 
-.login .container .primary-button, .form .primary-button {
+.login .container .primary-button, .login .container .form .primary-button {
   background-color: #ACD9B2;
   border: none;
   border-radius: 8px;
@@ -83,7 +91,27 @@ body {
   height: 5rem;
 }
 
-.login .container .login-button, .form .login-button {
+.login .container .secundary-button {
+  background-color: #FFFFFF;
+  border: 1px solid #ACD9B2;
+  border-radius: 8px;
+  color: #ACD9B2;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: bold;
+  height: 5rem;
+  transition: all 0.5s;
+}
+
+.login .container .secundary-button:hover {
+  background-color: #ACD9B2;
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+  color: #FFFFFF;
+}
+
+.login .container .login-button, .login .container .form .login-button {
   margin-top: 1.4rem;
   margin-bottom: 3rem;
 }
@@ -128,6 +156,22 @@ body {
 }
 .login .container .email-image img {
   width: 8rem;
+}
+@media (max-width: 640px) {
+  .login .container .logo {
+    display: flex;
+  }
+}
+.login .container .form .input-email {
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 640px) {
+  .login .container .secundary-button {
+    width: 30rem;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2.4rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

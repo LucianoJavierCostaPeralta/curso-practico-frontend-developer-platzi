@@ -1,0 +1,57 @@
+
+// password.html
+.login {
+    @extend %login;
+
+    .container {
+        @extend %container;
+
+        .logo {
+            @extend %logo;
+
+            @media (max-width : 640px){
+                display: flex;
+            }
+        }
+
+
+        .form {
+
+            @extend %form;
+        
+        
+            .label {@extend %label;}
+        
+            .input {@extend %input;}
+
+            .input-email{ margin-bottom: 2.5rem; }
+        
+            .primary-button {@extend %primary-button;}
+        
+            .login-button{@extend %login-button;}
+
+            a {@extend %form-a;}
+
+        }
+
+        .secundary-button {
+            @extend %secundary-button;
+
+            &:hover {
+                @extend %secundary-button-hover;
+            }
+
+            @media (max-width: 640px){
+
+                    width: 30rem;
+                    position: absolute;
+                    bottom: 0;
+                    margin-bottom: 2.4rem;
+                
+            }
+        
+        
+        }
+
+    }
+}

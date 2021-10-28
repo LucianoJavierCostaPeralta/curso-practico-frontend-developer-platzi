@@ -41,6 +41,14 @@
     flex-direction: column;
 }
 
+%form-a {
+    color: $hospital--green;
+    font-size: $sm;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 5.2rem;
+}
+
 %label {
     font-size: $sm;
     font-weight: bold;
@@ -69,6 +77,28 @@
     height: 5rem;
 
 }
+
+%secundary-button {
+    background-color: $white;
+    border : 1px solid $hospital--green;
+    border-radius: 8px;
+    color: $hospital--green;
+    width: 100%;
+    cursor: pointer;
+    font-size: $md;
+    font-weight: bold;
+    height: 5rem;
+    transition: all 0.5s;
+}
+
+
+%secundary-button-hover{
+    background-color: $hospital--green;
+    border : 1px solid $white;
+    border-radius: 8px;
+    color: $white;
+}
+
 
 %login-button{
     margin-top: 1.4rem;
