@@ -71,7 +71,7 @@ body {
   margin-bottom: 1.2rem;
 }
 
-.form .primary-button {
+.login .container .primary-button, .form .primary-button {
   background-color: #ACD9B2;
   border: none;
   border-radius: 8px;
@@ -83,9 +83,33 @@ body {
   height: 5rem;
 }
 
-.form .login-button {
+.login .container .login-button, .form .login-button {
   margin-top: 1.4rem;
   margin-bottom: 3rem;
+}
+
+.login .container .email-image {
+  width: 13.2rem;
+  height: 13.2rem;
+  border-radius: 50%;
+  background-color: #F7F7F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+.login .container .resend {
+  font-size: 1.6rem;
+}
+
+.login .container .resend span {
+  color: #C7C7C7;
+}
+
+.login .container .resend a {
+  color: #ACD9B2;
+  text-decoration: none;
 }
 
 /*components*/
@@ -93,6 +117,17 @@ body {
   .login .container .logo {
     display: flex;
   }
+}
+.login .container {
+  justify-items: center;
+}
+@media (max-width: 640px) {
+  .login .container .logo {
+    display: flex;
+  }
+}
+.login .container .email-image img {
+  width: 8rem;
 }
 
 /*# sourceMappingURL=style.css.map */

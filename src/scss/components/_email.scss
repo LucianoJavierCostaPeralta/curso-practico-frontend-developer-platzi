@@ -1,0 +1,54 @@
+.login {
+    @extend %login;
+
+    .container {
+        @extend %container;
+        justify-items: center;
+
+        .logo {
+            @extend %logo;
+
+            @media (max-width : 640px){
+                display: flex;
+            }
+        }
+
+        .title {
+            @extend %title;
+        }
+
+        .subtitle {
+            @extend %subtitle;
+        }
+
+        .email-image {
+            @extend %email-image;
+
+            img {
+                width: 8rem;
+            }
+        } 
+
+        .primary-button {
+            @extend %primary-button;
+        }
+    
+        .login-button{
+            @extend %login-button;
+        }
+
+        .resend {
+            @extend %resend;
+
+            span{
+                @extend %resend-span;
+            }
+
+            a {
+                @extend %resend-a;
+            }
+
+
+        }
+    }
+}

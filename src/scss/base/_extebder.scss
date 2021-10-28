@@ -74,3 +74,21 @@
     margin-top: 1.4rem;
     margin-bottom: 3rem;
 }
+
+%email-image {
+    width: 13.2rem;
+    height: 13.2rem;
+    border-radius: 50%;
+    background-color: $text--input--field;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.4rem;
+}
+
+%resend {font-size: $sm;}
+%resend-span {color: $very--ligth-pink ;}
+%resend-a { 
+    color: $hospital--green ;
+    text-decoration: none;
+}
