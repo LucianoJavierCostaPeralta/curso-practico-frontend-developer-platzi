@@ -27,6 +27,12 @@
     text-align: center;
 }
 
+%title-account {
+    font-size:$lg;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
 %subtitle {
     color:  $very--ligth-pink;
     font-size: $sm;
@@ -37,6 +43,11 @@
 }
 
 %form {
+    display: flex;
+    flex-direction: column;
+}
+
+%flex-column{
     display: flex;
     flex-direction: column;
 }
