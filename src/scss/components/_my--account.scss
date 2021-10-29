@@ -1,0 +1,55 @@
+.login--my--account {
+    @extend %login;
+
+    .container--my--account {
+        @extend %container;
+
+        @media (max-width: 640px) {
+            height: 100%;
+        }
+
+        .title--my--account {
+            @extend  %title-account;
+            
+        }
+
+        .form--my--account {
+
+            @media (max-width: 640px) {
+                height: 100%;
+                justify-content: space-between;
+            }
+    
+            @extend %form;
+
+            div {
+                @extend  %flex-column;
+
+                .label--my--account {
+                    @extend %label;
+                }
+
+                .value--my--account{
+                    @extend %value--my--account;
+                }
+
+            }
+        
+        
+            .secundary--button--my--account {
+                @extend %secundary-button ;
+
+                &:hover {
+                    @extend %secundary-button-hover;
+                }
+            }
+        
+            .login--button--account {
+                @extend %login-button;
+            }
+
+            
+        }
+
+    }
+}

@@ -1,9 +1,9 @@
 
 // email.html
-.login {
+.login--email {
     @extend %login;
 
-    .container {
+    .container--email {
         @extend %container;
         justify-items: center;
 
@@ -15,15 +15,15 @@
             }
         }
 
-        .title {
+        .title--email {
             @extend %title;
         }
 
-        .subtitle {
+        .subtitle--email {
             @extend %subtitle;
         }
 
-        .email-image {
+        .email--image {
             @extend %email-image;
 
             img {
@@ -31,11 +31,11 @@
             }
         } 
 
-        .primary-button {
+        .primary--button--email {
             @extend %primary-button;
         }
     
-        .login-button{
+        .login--button--email{
             @extend %login-button;
         }
 

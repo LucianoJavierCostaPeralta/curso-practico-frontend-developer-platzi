@@ -1,9 +1,9 @@
 
 // password.html
-.login {
+.login--account {
     @extend %login;
 
-    .container {
+    .container--account {
         @extend %container;
 
         @media (max-width: 640px) {
@@ -12,31 +12,37 @@
 
         
 
-        .title-account {
-          @extend  %title-account;
+        .title--account {
+            @extend  %title-account;
         }
 
-        .form {
+        .form--account {
     
             @extend %form;
 
             div {
                 @extend  %flex-column;
+
+                .label--account {
+                    @extend %label;
+                }
+
+                .input {
+                    @extend %input;
+                }
+            
+                .input--name--account , .input--email--account,
+                .input--password--account {
+                    margin-bottom: 2.2rem;
+                }
             }
         
-            .input {
-                @extend %input;
-            }
         
-            .input-name,.input-email,.input-password {
-               margin-bottom: 2.2rem;
-            }
-        
-            .primary-button {
+            .primary--button--account {
                 @extend %primary-button;
             }
         
-            .login-button{
+            .login--button--account {
                 @extend %login-button;
             }
 

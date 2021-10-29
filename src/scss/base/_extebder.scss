@@ -30,7 +30,7 @@
 %title-account {
     font-size:$lg;
     margin-bottom: 2rem;
-    text-align: center;
+    text-align: start;
 }
 
 %subtitle {
@@ -103,7 +103,7 @@
 }
 
 
-%secundary-button-hover{
+%secundary-button-hover {
     background-color: $hospital--green;
     border : 1px solid $white;
     border-radius: 8px;
@@ -132,4 +132,10 @@
 %resend-a { 
     color: $hospital--green ;
     text-decoration: none;
+}
+
+%value--my--account{
+    color : $very--ligth-pink ;
+    font-size: $md;
+    margin : 0.8rem 0 3.2rem 0;
 }
