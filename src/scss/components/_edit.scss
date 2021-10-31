@@ -1,0 +1,58 @@
+
+// password.html
+.login--edit {
+    @extend %login;
+
+    .container--edit {
+        @extend %container;
+
+        @media (max-width: 640px) {
+            height: 100%;
+        }
+
+        
+
+        .title--edit {
+            @extend   %title-account;
+        }
+
+        .form--edit {
+    
+            @extend %form;
+
+            div {
+                @extend  %flex-column;
+
+                .label--edit {
+                    @extend %label;
+                }
+
+                .value{
+                    @extend %value;
+                }
+
+                
+            }
+        
+        
+            .secundary--button--edit {
+               @extend %secundary-button ;
+
+                &:hover {
+                        @extend %secundary-button-hover;
+                }
+            }
+        
+            .login--button--edit {
+                @extend %login-button;
+            }
+
+            @media (max-width: 640px) {
+                height: 100%;
+                justify-content: space-between;
+            }
+        }
+
+        
+    }
+}
